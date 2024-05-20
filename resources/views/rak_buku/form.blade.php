@@ -47,7 +47,7 @@ $(function() {
     @if (strtolower($store) == 'ubah')
     @method('PUT')
     @endif
-    <input type="hidden" name="id" value="{{ $rak->id }}" />
+    `<input type="hidden" name="id" value="{{ $rak->id }}" />
     <input type="text" class="mail_text" id="nama" name="nama" placeholder="Nama Rak" value="{{ $rak->nama }}" /><br>
     @error('nama')
     <b>{{ $message }}</b>
@@ -62,7 +62,7 @@ $(function() {
     <input type="text" class="mail_text" id="keterangan" name="keterangan" placeholder="keterangan"
         value="{{ $rak->keterangan }}" /><br>
     <p><input type="text" id="datepicker" name="tanggal" placeholder="tanggal"></p>
-    {{-- <input type="submit" value="{{ $store }}" /> --}}
+    {{-- <input type="submit" value="{{ $store }}" /> --}}`
     <div class="save_bt" id="btn_save">
         Simpan
     </div>
